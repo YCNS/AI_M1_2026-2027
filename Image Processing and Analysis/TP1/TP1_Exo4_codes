@@ -1,0 +1,29 @@
+What the teacher wrote on board
+
+# 1
+image = cv2.imread("crystal.jpg")
+
+# 2
+hauteur, largeur = image.shape()
+
+# 3
+image_sortie = cv2.resize(image, largeur, hauteur)
+
+# 4
+image_sortie = iamge[y_debut, y_fin, x_debut, x_fin]
+
+# 5
+image_copie = image.copy()
+
+# * Tracer un rectangle
+cv2.rectangle(image, (x1,y1), (x2,y2), (B,G,R), epaisseur)
+
+# * Pour viser un text
+cv2.putText(image, text, police, echelle, (B,G,R), epaisseur)
+
+# 6
+centre = (largeur//2, hauteur//2)
+
+# Rotaion
+matrice = cv2.getRotationMatrix2D(centre, angle, echelle)
+image_sortie = cv2.warpAffine(image, matrice, largeur_sortie, longeur_sortie)
