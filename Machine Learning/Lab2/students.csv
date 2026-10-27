@@ -1,0 +1,41 @@
+Name,Age,Gender,Score,Grade,City
+Yasmine,20.0,Female,17.5,A,Boumerdes
+Amine,21.0,Male,14.0,B,Algiers
+Sara,19.0,Female,16.0,A,Tizi Ouzou
+Karim,22.0,Male,11.5,C,Boumerdes
+Lina,20.0,Female,18.0,A,Oran
+Mehdi,23.0,Male,9.0,D,Algiers
+Nour,18.0,Female,15.5,B,Setif
+Ilyes,21.0,Male,13.0,B,Boumerdes
+Meriem,20.0,Female,16.5,A,Tlemcen
+Walid,24.0,Male,10.0,C,Oran
+Ines,19.0,Female,14.5,B,Algiers
+Rayan,22.0,Male,12.0,C,Setif
+Amel,21.0,Female,17.0,A,Boumerdes
+Samir,20.0,Male,8.5,D,Tizi Ouzou
+Lamia,19.0,Female,15.0,B,Oran
+Adel,23.0,Male,13.5,B,Algiers
+Kenza,20.0,Female,18.5,A,Setif
+Bilal,21.0,Male,11.0,C,Boumerdes
+Rania,22.0,Female,16.0,A,Tlemcen
+Omar,19.0,Male,14.0,B,Oran
+Yacine,-5.0,Male,12.5,C,Algiers
+Dalia,20.0,Female,,B,Boumerdes
+Hichem,,Male,13.0,B,Setif
+Nadia,21.0,,17.0,A,Oran
+Fares,22.0,Male,10.5,,Algiers
+Sofia,19.0,Female,15.0,B,
+Anis,20.0,M,14.0,B,algiers
+Maya,21.0,female,16.0,A,Boumerdes
+Rachid,22.0,Male,12.0,C,Oran
+Rachid,22.0,Male,12.0,C,Oran
+Lyes,25.0,Male,7.0,D,Tlemcen
+Mouna,18.0,Female,19.0,A,Setif
+Said,20.0,Male,13.5,B,Boumerdes
+Farah,19.0,Female,16.5,A,Algiers
+Nabil,21.0,Male,11.5,C,Tizi Ouzou
+Amina,20.0,Female,15.0,B,Oran
+Zinedine,22.0,Male,9.5,D,Setif
+Chahinez,19.0,Female,17.5,A,Boumerdes
+Mourad,21.0,Male,14.5,B,Tlemcen
+Lina,20.0,Female,18.0,A,Oran
