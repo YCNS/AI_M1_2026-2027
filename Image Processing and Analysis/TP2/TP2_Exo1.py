@@ -1,4 +1,3 @@
-# From a class-mate
 import cv2
 import numpy as np
 
