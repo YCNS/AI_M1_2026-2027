@@ -1,0 +1,5 @@
+Laptop,1000,3
+Phone,500,5
+Tablet,700,2
+Monitor,300,4
+Camera,400,1
