@@ -1,38 +1,40 @@
 import cv2
-# Reading an image
-img = cv2.imread('crystal.jpg')
+# Lecture d'une image
+img = cv2.imread('Images/BoatsColor.bmp')
 
-# Load a colour image with its conversion to greyscale
-gray_img = cv2.imread('crystal.jpg', cv2.IMREAD_GRAYSCALE)
-# Converting a colour image to a greyscale image
+# Charger une image couleur avec sa conversion en niveaux de gris
+gray_img = cv2.imread('Images/BoatsColor.bmp', cv2.IMREAD_GRAYSCALE)
+# Transformer une image couleurs en une image en niveaux de gris
 gray_img2 = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-# Displaying an image
+# Affichage d'une image
 cv2.imshow('Input Image', img)
-cv2.imshow(' Image loaded in greyscale ', gray_img)
-cv2.imshow(' Image converted to greyscale ', gray_img2)
+cv2.imshow(' Image chargée en niveau de gris', gray_img)
+cv2.imshow(' Image tranformée en niveau de gris', gray_img2)
 cv2.waitKey(0)
 
-# Reading the colours of a pixel at position (100, 150)
+# Lecture des couleurs d'un pixel à la position at (100, 150)
 pixel = img[100, 150]
-print(f" The RGB values of Pixel at (100, 150) are: {pixel}")
+print(f"Les valeurs BGR de Pixel à (100, 150) sont : {pixel}")
 
-""" Reading image dimensions: dimensions = img.shape
-For a colour image, dimensions contains three values:
-(height, width, channels). height: number of rows of pixels in the image.
-width: number of columns of pixels in the image. channels: number of colour
-channels (e.g. 3 for RGB, 1 for greyscale). For a greyscale image,
-dimensions contains two values: (height, width """
+""" Lecture des dimensions des images : dimensions = img.shape
+Pour une image couleur, dimensions contient trois valeurs :
+(hauteur, largeur, canaux). hauteur : nombre de lignes de
+pixels dans l'image. largeur : nombre de colonnes de pixels
+dans l'image. canaux : nombre de canaux de couleur (par
+exemple, 3 pour RGB, 1 pour les niveaux de gris). Pour une
+image en niveaux de gris, dimensions contient deux valeurs :
+(hauteur, largeur)"""
 
 height, width, channels = img.shape
 print(f"Height: {height} pixels")
 print(f"Width: {width} pixels")
 print(f"Channels: {channels}")
 
-#Changing the pixel colours of the centre line to red
+#Modification des couleurs de pixel de la ligne de centre vers une couleur rouge
 for i in range(0, width):
-    img[int(height/2), i] = [0, 0, 255] # [B,G,R] modified to red
-cv2.imshow('Converted Image', img)
+    img[int (height/2), i] = [0, 0, 255] # [B,G,R] modifier en rouge
+cv2.imshow('Image modifiée', img)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
