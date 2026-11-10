@@ -1,46 +1,35 @@
+import numpy as np
 import cv2
+# Lecture d'une image
+#img = cv2.imread('Images/compteur.jpg', )
+img = cv2.imread('Images/flower.bmp', )
 
-# Reading an image
-img = cv2.imread('../Images/fruits.bmp')
+# Convertir l'image en niveau de gris
+img_ng = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-# Load a colour image with its conversion to greyscale
-gray_img = cv2.imread('../Images/fruits.bmp', cv2.IMREAD_GRAYSCALE)
+# Lecture des dimensions de l'image en niveau de gris
+height, width = img_ng.shape
 
-# Converting a colour image to a greyscale image
-gray_img2 = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+#Pixels with intensity > 80 become 255 (white), others become 0 (black)
 
-# Displaying an image
-# cv2.imshow('Input Image', img)
-# cv2.imshow(' Image loaded in greyscale ', gray_img)
-# cv2.imshow(' Image converted to greyscale ', gray_img2)
-# cv2.waitKey(0)
+# Solution 1 sans numpy
+(v , imgb1 )= cv2.threshold(img_ng, 80, 255,
+cv2.THRESH_BINARY)
 
-# Reading the colours of a pixel at position (100, 150)
-pixel = img[100, 150]
-print(f" The RGB values of Pixel at (100, 150) are: {pixel}")
+# Solution 2 avec numpy:  Créer une image BGR vide avec numpy
+imgb2 = np.zeros((height, width))
 
-""" Reading image dimensions: dimensions = img.shape
-For a colour image, dimensions contains three values:
-(height, width, channels). height: number of rows of pixels in the image.
-width: number of columns of pixels in the image. channels: number of colour
-channels (e.g. 3 for RGB, 1 for greyscale). For a greyscale image,
-dimensions contains two values: (height, width """
+for i in range(0, height):
+    for j in range(0, width) :
+        if img_ng[i,j]> 80 :
+            imgb2[i,j] = 255
 
-height, width, channels = img.shape
-print(f"Height: {height} pixels")
-print(f"Width: {width} pixels")
-print(f"Channels: {channels}")
-
-#Changing the pixel colors based on the gray level
-GL_C = 80
-for i in range(0, width):
-    for j in range (0, height):
-        if (gray_img[i, j] > GL_C):
-            gray_img[i, j] = [255, 255, 255]
-        else :
-            gray_img[i, j] = [0, 0, 0]
-
-cv2.imshow('Converted Image', img)
+cv2.imshow('Image couleur', img)
+cv2.imshow('Image en niveaux de gris', img_ng)
+cv2.imshow('imgb1', imgb1)
+cv2.imshow('imgb2', imgb2)
+# Save the binary image
+cv2.imwrite('Images/imgb1.jpg', imgb1)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
