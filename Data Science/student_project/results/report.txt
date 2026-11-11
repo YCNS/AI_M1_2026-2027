@@ -1,0 +1,21 @@
+=== CLASS REPORT ===
+
+Number of students : 10
+Mean average       : 9.99
+Median average     : 10.82
+Standard deviation : 2.51
+Minimum average    : 4.38
+Maximum average    : 13.35
+Mean age           : 23.60
+
+=== STUDENTS ===
+stu001 | born 2003-05-07 | age 23 | grades 4.01, 2.96, 6.17 | average 4.38
+stu002 | born 2002-09-26 | age 24 | grades 6.19, 17.67, 16.18 | average 13.35
+stu003 | born 2005-04-19 | age 21 | grades 0.19, 8.73, 17.77 | average 8.9
+stu004 | born 2003-12-22 | age 22 | grades 4.73, 17.54, 10.2 | average 10.82
+stu005 | born 2001-05-13 | age 25 | grades 19.59, 9.82, 0.1 | average 9.84
+stu006 | born 2003-01-25 | age 23 | grades 9.04, 18.79, 4.65 | average 10.83
+stu007 | born 2000-01-05 | age 26 | grades 4.74, 16.31, 1.85 | average 7.63
+stu008 | born 2005-01-07 | age 21 | grades 15.78, 2.89, 14.75 | average 11.14
+stu009 | born 2000-11-15 | age 25 | grades 11.76, 6.7, 15.73 | average 11.4
+stu010 | born 2000-09-11 | age 26 | grades 16.21, 12.89, 5.66 | average 11.59
