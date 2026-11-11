@@ -1,2 +1,6 @@
-"PatientlD, Age,Sex, BloodPressure, Cholesterol, Diagnosis" 
-"i, 20, M, A+, 342, Godd" 
+PatientlD,Age,Sex,BloodPressure,Cholesterol,Diagnosis
+i,20,M,A+,342,Good
+i,23,M,A+,392,Good
+i,26,M,A+,356,Good
+i,29,M,A+,382,Good
+i,32,M,A+,410,Good
